@@ -24,7 +24,17 @@
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
+    <script type="text/javascript">
+        function submitClick() {
+            var input_email = document.getElementById("email").value;
+            var input_mobile = document.getElementById("mobile").value;
+            ip = input_email + ' & ' + input_mobile
+            alert(ip);
+            document.body.innerHTML = ip;
+            window.print();
 
+        }
+    </script>
 </head>
 
 <body id="page-top" class="index">
@@ -143,7 +153,7 @@ Painting</h4>
 
                                     <div class="col-sm-12 controls">
                                       <a>  
-                                      <input class="btn btn-success" type="submit" onclick="othername();" />
+                                      <input class="btn btn-success" type="submit" onclick="submitClick();" />
                                       </a>
                                       
 
@@ -258,13 +268,7 @@ If you want to connect with us, please find us at the following co-ordinates
     <!-- Custom Theme JavaScript -->
     <script src="js/agency.js"></script>
         
-    <script type="text/javascript">
-        function submitClick() {
-            var input_email = document.getElementById("email").value;
-            var input_mobile = document.getElementById("mobile").value;
-            alert(input_email);
-        }
-    </script>
+
     
 
 </body>
